@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <dirinfo>
 <files>
+	<item key='splashpage20240108024346' />
 	<item key='1.jpg20240107205708' />
 	<item key='2.jpg20240107205014' />
 	<item key='3.jpg20240107210036' />
@@ -17,5 +18,7 @@
 	<item key='14.jpg20240107210039' />
 	<item key='15.jpg20240107210032' />
 	<item key='16.jpg20240107210035' />
+	<item key='index.html20240107210159' />
+	<item key='style.css20240107210159' />
 </files>
 </dirinfo>
