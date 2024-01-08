@@ -22,3 +22,7 @@ function makeunorderedlist(size){
     return a;
 
 }
+
+function creatColumns(size){
+    
+}
