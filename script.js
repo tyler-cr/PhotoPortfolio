@@ -23,6 +23,16 @@ function makeunorderedlist(size){
 
 }
 
-function creatColumns(size){
-    
+function creatColumns(size, location){
+    const randlist = makeunorderedlist(size)
+    const colsize = Math.floor(size/3)
+    let j = 1;
+    for (let i = 0; i< size; i++){
+        if ((i+1)%colsize == 0 && j < 3){
+            j++;
+        }
+        const image = document.createElement('img')
+        image.src = './'+location+'/' + randlist[i] + '.jpg';
+        document.getElementById('column'+j).appendChild(image);
+    }
 }
