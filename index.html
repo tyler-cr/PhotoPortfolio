@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="creatColumns(165, 'splashpage')">
     <div class="container">
       <div class="heading">
         <h3>Photo <span>Gallery</span></h3>
@@ -37,32 +37,10 @@
         </div>
       </div>
 
-      <div class="rows">
-        <div class="columns">
-          <img src="./splashpage/1.jpg" alt="" />
-          <img src="./splashpage/2.jpg" alt="" />
-          <img src="./splashpage/3.jpg" alt="" />
-          <img src="./splashpage/4.jpg" alt="" />
-          <img src="./splashpage/5.jpg" alt="" />
-          <img src="./splashpage/6.jpg" alt="" />
-        </div>
-        <div class="columns">
-          <img src="./splashpage/9.jpg" alt="" />
-          <img src="./splashpage/10.jpg" alt="" />
-          <img src="./splashpage/11.jpg" alt="" />
-          <img src="./splashpage/12.jpg" alt="" />
-          <img src="./splashpage/7.jpg" alt="" />
-        </div>
-        <div class="columns">
-          <img src="./splashpage/13.jpg" alt="" />
-          <img src="./splashpage/14.jpg" alt="" />
-          <img src="./splashpage/15.jpg" alt="" />
-          <img src="./splashpage/16.jpg" alt="" />
-          <img src="./splashpage/8.jpg" alt="" />
-        </div>
-      </div>
-      <div class="button">
-        <a href="#">More</a>
+      <div class="rows" id="rows">
+        <div class="columns" id="column1"></div>
+        <div class="columns" id="column2"></div>
+        <div class="columns" id="column3"></div>
       </div>
     </div>
   </body>
