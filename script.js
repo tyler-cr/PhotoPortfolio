@@ -32,7 +32,10 @@ function creatColumns(size, location){
             j++;
         }
         const image = document.createElement('img')
-        image.src = './'+location+'/' + randlist[i] + '.jpg';
+        image.src = './images/'+location+'/' + randlist[i] + '.jpg';
         document.getElementById('column'+j).appendChild(image);
     }
 }
+
+
+

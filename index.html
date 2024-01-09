@@ -4,14 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Portfolio</title>
+
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-  </head>
-  <body onload="creatColumns(165, 'splashpage')">
-    <div class="container">
-      <div class="heading">
-        <h3>Photo <span>Gallery</span></h3>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
+  </head>
+  <body id = "body" onload="creatColumns(165, 'splashpage')">
+    <header class="header">
+        <a href="./index.html" class="logo">Tyler Crimando Photography.<span class="animate" style="--i:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="./architectual.html">Architectual</a>
+            <a href="./blackandwhite.html">Black and White</a>
+            <a href="./interior.html">Interior</a>
+            <a href="./nature.html">Nature</a>
+            <a href="./portrait.html">Portrait</a>
+            <a href="./sport.html">Sport</a>
+            <a href="./street.html">Street</a>
+
+            <span class="active-nav"></span>
+        </nav>
         <div class="wave">
           <svg
             data-name="Layer 1"
@@ -34,14 +52,18 @@
               class="shape-fill"
             ></path>
           </svg>
-        </div>
+        </div>    
+    </header>
+    
+    <div class="container">
+      <div class="heading"> 
       </div>
-
       <div class="rows" id="rows">
         <div class="columns" id="column1"></div>
         <div class="columns" id="column2"></div>
         <div class="columns" id="column3"></div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
