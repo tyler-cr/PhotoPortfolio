@@ -4,6 +4,7 @@
 - If user clicks on image, has 2/3 screensize pop-up with image (WIP)
 - Find a way to not have to hardcode each page and how many images are in the file
 - cleanup css
+- See if you can get some of the image metadata on the image pop-up
 
 
 ## DONE:
