@@ -58,3 +58,10 @@ clone.classList.add('clone');
 
 // Insert the clone after the original element
 original.parentNode.insertBefore(clone, original.nextSibling);
+
+// fun window scrolling stolen from my html portfolio... Hopefully works for mobile scrolling
+window.onscroll = () => {
+    // remove toggle icon and navbar when click navbar links (scroll)
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
