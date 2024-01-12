@@ -1,6 +1,6 @@
 TO ADD:
 
---navbar has arrow click button to hide it. Allows for more image real estate.
+--navbar has arrow click button to hide it. Allows for more image real estate. (WIP)
 
 --Each Page only starts with 9 images. Have button that allows more to generate.
 
@@ -8,4 +8,4 @@ TO ADD:
 
 --If user clicks on image, has 2/3 screensize pop-up with image
 
---Create contact page
+--Create contact page (DONE)
