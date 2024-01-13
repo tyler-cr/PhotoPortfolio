@@ -1,3 +1,59 @@
+// fake dictionary for attatching an html page to it's respective images folder
+const index = {imagesfolder: "./images/splashpage"};
+const architectual = {imagesfolder: "./images/architectual"};
+const blackandwhite = {imagesfolder: "./images/bnw"};
+const interior = {imagesfolder: "./images/interior"};
+const nature = {imagesfolder: "./images/nature"};
+const portrait = {imagesfolder: "./images/portrait"};
+const sport = {imagesfolder: "./images/sport"};
+const street = {imagesfolder: "./images/street"};
+
+const all_pages = {index,architectual,blackandwhite,interior,nature,portrait,sport,street};
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+page = page.replace(".html", "");
+var page_imag = all_pages[page].imagesfolder;
+
+// CHECK IF IMAGE EXISTS
+function checkIfImageExists(url, callback) {
+    const img = new Image();
+    img.src = url;
+    
+    if (img.complete) {
+      callback(true);
+    } else {
+      img.onload = () => {
+        callback(true);
+      };
+      
+      img.onerror = () => {
+        callback(false);
+      };
+    }
+  }
+
+
+// Uses check if exists in O(n) time (I think) to see how many photos are in designated folder
+function sizeoffolder(folder, i = 1) {
+    return new Promise((resolve, reject) => {
+        checkIfImageExists(folder + '/' + i + '.jpg', (exists) => {
+            if (exists) {
+                resolve(sizeoffolder(folder, i + 1));
+            } else {
+                resolve(i);
+            }
+        });
+    });
+}
+
+var folder_size;
+
+sizeoffolder(page_imag).then(result => {
+    folder_size = result-1;
+}).catch(error => {
+    console.error(error);
+});
 
 // creat a list of size size, and then return it in a random order
 function makeunorderedlist(size){
@@ -26,11 +82,11 @@ function makeunorderedlist(size){
 }
 
 // the code that creates the 3 columns
-function creatColumns(size, location){
-    const randlist = makeunorderedlist(size);
-    const colsize = Math.floor(size/3);
+function creatColumns(){
+    const randlist = makeunorderedlist(folder_size);
+    const colsize = Math.floor(folder_size/3);
     let j = 1;
-    for (let i = 0; i< size; i++){
+    for (let i = 0; i< folder_size; i++){
         // if we're at a third of the size then move on to next column
         // but if we're on final column, just dump rest of the images
         if ((i+1)%colsize == 0 && j < 3){
@@ -38,14 +94,13 @@ function creatColumns(size, location){
         }
         const image = document.createElement('img');
         
-        image.src = './images/'+location+'/' + randlist[i] + '.jpg';
+        image.src = page_imag+'/' + randlist[i] + '.jpg';
         
         // handle the image popping up
         image.onclick = () => {
             let popup = document.querySelector('.popup-imag');
             let popimage= document.querySelector('.actualpop');
-            let header = document.querySelector('.header');
-            popimage.src = './images/'+location+'/' + randlist[i] + '.jpg';
+            popimage.src = image.src;
             popup.style.display = 'block';
 
         }
