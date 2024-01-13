@@ -8,6 +8,8 @@
 - Create an actual splash page instead of just immediately going to full gallery
 - make cool square image carousel for gallery photos
 - do same (^) but for other select pieces
+- git ignore the bridge file
+- make highlighting on the contact page easier
 
 ## DONE:
 - Create contact page.
