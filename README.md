@@ -6,7 +6,9 @@
 - See if you can get some of the image metadata on the image pop-up
 - Have images fade in (do this after the nine images / generate more addition is completed)
 - Give popup image a lil outline incase the photo looks like it bleeds too much into the background
-
+- Create an actual splash page instead of just immediately going to full gallery
+- make cool square image carousel for gallery photos
+- do same (^) but for other select pieces
 
 ## DONE:
 - Create contact page.
