@@ -40,7 +40,6 @@ html{
 }
 
 .container h3{
-    -webkit-text-stroke: .2px var(--text-warm);
     color: var(--text-warm);
 }
 
@@ -228,6 +227,15 @@ h3 {
         -webkit-mask-size: 100vw ;
         mask-size: 100vw ;
         -webkit-mask-attachment: fixed;
+    }
+
+    .container h3 {
+        color: var(--slate-tyler);
+    }
+
+    .clone h3 {
+        color: var(--text-warm);
+        -webkit-text-stroke: 0;
     }
 
 }
