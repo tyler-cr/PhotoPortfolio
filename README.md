@@ -4,6 +4,7 @@
 - Find a way to not have to hardcode each page and how many images are in the file (WIP)
 - cleanup css
 - See if you can get some of the image metadata on the image pop-up
+- Have images fade in (do this after the nine images / generate more addition is completed)
 
 
 ## DONE:
