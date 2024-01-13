@@ -135,13 +135,13 @@ footer{
 .container .rows .columns img:hover {
     transform: scale(1.05);
     cursor: pointer;
-    z-index: 100;
 }
 
 .popup-imag {
     position: fixed;
     top:0; left: 0;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
     background: rgb(0, 0, 0, .4);
     height: 100%;
     width: 100%;
@@ -185,7 +185,7 @@ footer{
     }
 
     .header {
-    background: rgb(31,31,31);
+        background: rgb(31,31,31);
     }
 
     .navbar {
