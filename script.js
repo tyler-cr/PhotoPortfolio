@@ -15,6 +15,8 @@ var page = path.split("/").pop();
 page = page.replace(".html", "");
 var page_imag = all_pages[page].imagesfolder;
 
+var imag_counter = 0;
+
 // CHECK IF IMAGE EXISTS
 function checkIfImageExists(url, callback) {
     const img = new Image();
@@ -82,19 +84,19 @@ function makeunorderedlist(size){
 }
 
 // the code that creates the 3 columns
-function creatColumns(){
+function createColumns(){
     const randlist = makeunorderedlist(folder_size);
     const colsize = Math.floor(folder_size/3);
     let j = 1;
-    for (let i = 0; i< folder_size; i++){
+    for (let i = 0; i < folder_size && i < 9 && imag_counter < folder_size; i++){
         // if we're at a third of the size then move on to next column
         // but if we're on final column, just dump rest of the images
-        if ((i+1)%colsize == 0 && j < 3){
+        if ((i)%3 == 0 && i != 0 && j < 3){
             j++;
         }
         const image = document.createElement('img');
         
-        image.src = page_imag+'/' + randlist[i] + '.jpg';
+        image.src = page_imag+'/' + randlist[imag_counter] + '.jpg';
         
         // handle the image popping up
         image.onclick = () => {
@@ -106,7 +108,12 @@ function creatColumns(){
         }
 
         document.getElementById('column'+j).appendChild(image);
+        imag_counter++;
     }
+}
+
+function addColumns(){
+    var a = "placeholder";
 }
 
 // toggle icon navbar
@@ -132,3 +139,14 @@ document.body.addEventListener('click', function() {
     popup.style.display = 'none';
 }, true);
 
+// load more images with the button, as long as there are more images to load
+let addimages = document.querySelector('.addimages');
+
+addimages.onclick = () => {
+    if (imag_counter < folder_size){
+        createColumns();
+    }
+    else{
+        addimages.style.display = 'none';
+    }
+}

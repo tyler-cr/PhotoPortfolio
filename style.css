@@ -161,6 +161,22 @@ footer{
     border: 2px solid var(--slate-tyler);
 }
 
+.button-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: transparent;
+    color: var(--text-warm-dark);
+    border-radius: 10px;
+    background: rgb(0, 0, 0, .1);
+    border: 5px solid;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
 @media (max-width: 1100px){
     .header {
         padding: 2rem 4%;
