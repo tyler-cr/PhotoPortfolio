@@ -1,12 +1,12 @@
 // fake dictionary for attatching an html page to it's respective images folder
-const index = {imagesfolder: "./images/splashpage"};
-const architectual = {imagesfolder: "./images/architectual"};
-const blackandwhite = {imagesfolder: "./images/bnw"};
-const interior = {imagesfolder: "./images/interior"};
-const nature = {imagesfolder: "./images/nature"};
-const portrait = {imagesfolder: "./images/portrait"};
-const sport = {imagesfolder: "./images/sport"};
-const street = {imagesfolder: "./images/street"};
+const index = {imagesfolder: "./images/splashpage", count:173};
+const architectual = {imagesfolder: "./images/architectual", count:25};
+const blackandwhite = {imagesfolder: "./images/bnw", count:41};
+const interior = {imagesfolder: "./images/interior", count:15};
+const nature = {imagesfolder: "./images/nature", count:48};
+const portrait = {imagesfolder: "./images/portrait", count:28};
+const sport = {imagesfolder: "./images/sport", count:13};
+const street = {imagesfolder: "./images/street", count:20};
 
 const all_pages = {index,architectual,blackandwhite,interior,nature,portrait,sport,street};
 
@@ -16,46 +16,8 @@ page = page.replace(".html", "");
 var page_imag = all_pages[page].imagesfolder;
 
 var imag_counter = 0;
+var folder_size = all_pages[page].count;
 
-// CHECK IF IMAGE EXISTS
-function checkIfImageExists(url, callback) {
-    const img = new Image();
-    img.src = url;
-    
-    if (img.complete) {
-      callback(true);
-    } else {
-      img.onload = () => {
-        callback(true);
-      };
-      
-      img.onerror = () => {
-        callback(false);
-      };
-    }
-  }
-
-
-// Uses check if exists in O(n) time (I think) to see how many photos are in designated folder
-function sizeoffolder(folder, i = 1) {
-    return new Promise((resolve, reject) => {
-        checkIfImageExists(folder + '/' + i + '.jpg', (exists) => {
-            if (exists) {
-                resolve(sizeoffolder(folder, i + 1));
-            } else {
-                resolve(i);
-            }
-        });
-    });
-}
-
-var folder_size;
-
-sizeoffolder(page_imag).then(result => {
-    folder_size = result-1;
-}).catch(error => {
-    console.error(error);
-});
 
 // creat a list of size size, and then return it in a random order
 function makeunorderedlist(size){
@@ -110,10 +72,6 @@ function createColumns(){
         document.getElementById('column'+j).appendChild(image);
         imag_counter++;
     }
-}
-
-function addColumns(){
-    var a = "placeholder";
 }
 
 // toggle icon navbar
