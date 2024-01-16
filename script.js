@@ -17,10 +17,10 @@ var page_imag = all_pages[page].imagesfolder;
 
 var imag_counter = 0;
 var folder_size = all_pages[page].count;
-console.log(page)
+if (path == "/PhotoPortfolio/") page = "index";
+console.log(page);
 
 
-if (!page) page = "index";
 
 
 // creat a list of size size, and then return it in a random order
