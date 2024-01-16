@@ -50,10 +50,9 @@ function makeunorderedlist(size){
 
 }
 
+const randlist = makeunorderedlist(folder_size);
 // the code that creates the 3 columns
 function createColumns(){
-    const randlist = makeunorderedlist(folder_size);
-    const colsize = Math.floor(folder_size/3);
     let j = 1;
     for (let i = 0; i < folder_size && i < 9 && imag_counter < folder_size; i++){
         // if we're at a third of the size then move on to next column
