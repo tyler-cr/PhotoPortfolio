@@ -20,4 +20,7 @@
 - Navbar on mobile hides if active and user starts scrolling.
 - If user clicks on image, has 2/3 screensize pop-up with image.
 - Find a way to not have to hardcode each page and how many images are in the file
+
+    Hardcoding, at least without any backend stuff, is just a better, MUCH faster solution. Maybe come back to.
+  
 - Give popup image a lil outline incase the photo looks like it bleeds too much into the background
