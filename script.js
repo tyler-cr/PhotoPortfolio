@@ -1,5 +1,5 @@
 // fake dictionary for attatching an html page to it's respective images folder
-const index = {imagesfolder: "./images/splashpage", count:173};
+const index = {imagesfolder: "./images/splashpage", count:172};
 const architectual = {imagesfolder: "./images/architectual", count:25};
 const blackandwhite = {imagesfolder: "./images/bnw", count:41};
 const interior = {imagesfolder: "./images/interior", count:15};
