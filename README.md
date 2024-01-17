@@ -2,7 +2,7 @@
 - **Space images so that they line up on the bottom all with one another.**
 - **cleanup css**
 - **See if you can get some of the image metadata on the image pop-up**
-- **Have images fade in (do this after the nine images / generate more addition is completed)** (WIP)
+
 - **Create an actual splash page instead of just immediately going to full gallery**
 - **make cool square image carousel for gallery photos**
 - **do same (^) but for other select pieces**
@@ -10,6 +10,7 @@
 - **make highlighting on the contact page easier**
 
 ## DONE:
+- Have images fade in (do this after the nine images / generate more addition is completed)
 - Create contact page.
 - Navbar on mobile hides if active and user starts scrolling.
 - If user clicks on image, has 2/3 screensize pop-up with image.
