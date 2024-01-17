@@ -52,16 +52,12 @@ var original = document.querySelector('.container');
 
 // Clone the original element
 var clone = original.cloneNode(true);
-var invis_clone = original.cloneNode(true);
 
 // Add a class to the clone for positioning
 clone.classList.add('clone');
-invis_clone.classList.add('clone');
-invis_clone.classList.add('invisible');
 
 // Insert the clone after the original element
 original.parentNode.insertBefore(clone, original.nextSibling);
-original.parentNode.insertBefore(invis_clone, original.nextSibling);
 
 // fun window scrolling stolen from my html portfolio... Hopefully works for mobile scrolling
 window.onscroll = () => {
