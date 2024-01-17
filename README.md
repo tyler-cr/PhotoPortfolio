@@ -1,13 +1,11 @@
 # TO ADD:
-- **Space images so that they line up on the bottom all with one another.**
+- **Space images so that they line up on the bottom all with one another.** (WIP)
 - **cleanup css**
-- **See if you can get some of the image metadata on the image pop-up**
-
 - **Create an actual splash page instead of just immediately going to full gallery**
 - **make cool square image carousel for gallery photos**
 - **do same (^) but for other select pieces**
-- **git ignore the bridge file**
-- **make highlighting on the contact page easier**
+
+
 
 ## DONE:
 - Have images fade in (do this after the nine images / generate more addition is completed)
@@ -25,3 +23,9 @@
     This still need to have updated css and just general "don't look like dookie" updates. But it's functional now, so there's that.
 
   ~~THIS NEEDS TO BE PRIORITIZED. WITH THE NEW CLASS DICTIONARY SYSTEM, THE IMAGES DONT SHOW UP UNTIL THEY'RE ALL LOADED. FOR PAGES WITH 100+ IMAGES, THAT IS BAD!!!~~
+
+- Git ignore the bridge file
+
+## Canceled:
+- make highlighting on the contact page easier
+- See if you can get some of the image metadata on the image pop-up
