@@ -1,5 +1,4 @@
 # TO ADD:
-- **Space images so that they line up on the bottom all with one another.** (WIP)
 - **cleanup css**
 - **Create an actual splash page instead of just immediately going to full gallery**
 - **make cool square image carousel for gallery photos**
@@ -29,3 +28,4 @@
 ## Canceled:
 - make highlighting on the contact page easier
 - See if you can get some of the image metadata on the image pop-up
+- Space images so that they line up on the bottom all with one another
