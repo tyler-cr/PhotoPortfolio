@@ -1,9 +1,9 @@
 # TO ADD:
 - **cleanup css**
-- **Create an actual splash page instead of just immediately going to full gallery**
+- **Create an actual splash page instead of just immediately going to full gallery** (WIP)
 - **make cool square image carousel for gallery photos**
 - **do same (^) but for other select pieces**
-- **Add a "copy email to clipboard" button on the copyboard** (WIP)
+
 
 
 
@@ -25,7 +25,8 @@
   ~~THIS NEEDS TO BE PRIORITIZED. WITH THE NEW CLASS DICTIONARY SYSTEM, THE IMAGES DONT SHOW UP UNTIL THEY'RE ALL LOADED. FOR PAGES WITH 100+ IMAGES, THAT IS BAD!!!~~
 
 - Git ignore the bridge file
-
+- Add a "copy email to clipboard" button on the copyboard
+   
 ## Canceled:
 - make highlighting on the contact page easier
 - See if you can get some of the image metadata on the image pop-up
