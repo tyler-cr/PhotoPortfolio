@@ -3,6 +3,7 @@
 - **Create an actual splash page instead of just immediately going to full gallery**
 - **make cool square image carousel for gallery photos**
 - **do same (^) but for other select pieces**
+- **Add a "copy email to clipboard" button on the copyboard** (WIP)
 
 
 
