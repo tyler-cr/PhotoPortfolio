@@ -1,9 +1,8 @@
 # TO ADD:
 - **cleanup code**
-- **implement Pam Design ideas**
+- **implement Pam Design ideas** (WIP)
 - **make cool square image carousel for gallery photos**
-- **do same (^) but for other select pieces**
-- **Edit photos with sratches and other ugly stuff**
+- **Edit photos with scratches and other ugly stuff**
 
 
 
