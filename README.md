@@ -1,6 +1,6 @@
 # TO ADD:
 - **cleanup code**
-- **implement Pam Design ideas** (WIP)
+- **implement Pam Design ideas**
 - **make cool square image carousel for gallery photos**
 - **Edit photos with scratches and other ugly stuff**
 
@@ -26,6 +26,7 @@
 
 - Git ignore the bridge file
 - Add a "copy email to clipboard" button on the copyboard
+- implement Pam Design ideas
    
 ## Canceled:
 - make highlighting on the contact page easier
