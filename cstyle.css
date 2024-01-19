@@ -14,7 +14,7 @@
     --slate-tyler: #727577;
     --bg-color: #1F1F1F;
     --text-warm: #ebdbbe;
-    --text-warm-mid: #c2b193;
+    --text-warm-mid: #937749;
     --text-warm-dark: #656a56;
 }
 
@@ -67,7 +67,7 @@ html{
 }
 
 .clone h3{
-    -webkit-text-stroke: .2px var(--text-warm);
+    -webkit-text-stroke: .2px var(--text-warm-mid);
     color: rgba(0, 0, 0, 0.27);
     letter-spacing: 2vw;
     text-align: center;
@@ -105,6 +105,11 @@ html{
     background: var(--bg-color);
     font-weight: 900;
     z-index: 100;
+    transition: .4s;
+}
+
+.logo:hover{
+    color: var(--text-warm-mid);
 }
 
 .navbar {
@@ -114,7 +119,6 @@ html{
 
 .navbar a {
     color: var(--text-warm);
-    background: transparent;
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .4s;
@@ -122,7 +126,7 @@ html{
 }
 
 .navbar a:hover, .navbar a.active{
-    color: var(--slate-tyler);
+    color: var(--text-warm-mid);
 }
 
 #menu-icon{
@@ -168,7 +172,7 @@ h3 {
 }
   
 .button:hover {
-    transition-duration: 0.1s;
+    transition-duration: 0.4s;
     background-color: #3a3a3a96;
     color: var(--text-warm-mid);
 }
@@ -235,7 +239,6 @@ h3 {
         display: block;
         font-size: 1rem;
         margin: 1rem 0;
-        color: transparent;
         transform: translateX(-20rem);
         transition: .25s ease;
         transition-delay: 0s;
@@ -244,7 +247,6 @@ h3 {
     .navbar.active a{
         transform: translateX(0);
         transition-delay: .3s;
-        color: var(--text-warm);
     }
 
     .navbar.active {
@@ -290,12 +292,13 @@ h3 {
     }
 
     .container h3 {
-        color: var(--slate-tyler);
+        color: var(--text-warm);
     }
 
     .clone h3 {
-        color: var(--text-warm);
-        -webkit-text-stroke: 0;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 0.2px var(--text-warm-mid);
+
     }
 
 }

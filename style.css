@@ -14,7 +14,8 @@
     --slate-tyler: #727577;
     --bg-color: #1F1F1F;
     --text-warm: #ebdbbe;
-    --text-warm-dark: hsl(39, 40%, 44%);
+    --text-warm-mid: #937749;
+    --text-warm-dark: #656a56;
 }
 
 html{
@@ -88,7 +89,8 @@ body {
 }
 
 .navbar a:hover, .navbar a.active{
-    color: var(--slate-tyler);
+    color: var(--text-warm-mid);
+    transition: .4s;
 }
 
 #menu-icon{
