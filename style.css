@@ -69,6 +69,13 @@ body {
     background: var(--bg-color);
     font-weight: 900;
     z-index: 100;
+    transition: .4s;
+}
+
+.logo:hover {
+    color: var(--text-warm-mid);
+    transform: scale(1.03);
+    transition: .4s;
 }
 
 .navbar {
@@ -79,17 +86,19 @@ body {
 .navbar a {
     color: var(--text-warm);
     font-weight: 500;
+    font-size: min(1.34vw, 1rem);
     margin-left: 3.5rem;
     transition: .4s;
     z-index: 99;
 }
 
 .navbar .contact{
-    color: var(--text-warm-dark)
+    color: var(--text-warm-dark);
 }
 
 .navbar a:hover, .navbar a.active{
     color: var(--text-warm-mid);
+    transform: scale(1.04);
     transition: .4s;
 }
 
