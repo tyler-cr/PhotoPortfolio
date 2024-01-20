@@ -123,8 +123,8 @@ html{
 .navbar a {
     color: var(--text-warm);
     font-weight: 500;
-    font-size: min(1.2vw, 1rem);
-    margin-left: 3.5rem;
+    font-size: min(1.34vw, 1rem);
+    margin-left: 3rem;
     transition: .4s;
     z-index: 99;
 }
