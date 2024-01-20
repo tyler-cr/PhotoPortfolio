@@ -1,6 +1,5 @@
 # TO ADD:
-- **cleanup code**
-- **make cool square image carousel for gallery photos** (wip)
+- **cleanup code** (wip)
 - **Edit photos with scratches and other ugly stuff**
 
 
